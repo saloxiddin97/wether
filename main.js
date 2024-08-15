@@ -1,9 +1,9 @@
 const btn = document.querySelector('button');
-const input = document.querySelector('input');
+const select = document.querySelector('select');
 
 async function weatherApp() {
   const cardWrapper = document.querySelector('#card-wrapper');
-  const city = input.value || 'tashkent';
+  const city = select.value || 'tashkent';
   console.log(city);
 
   const response = await fetch(
